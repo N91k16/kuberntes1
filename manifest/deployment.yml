@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-dep     # name of deployment
+
+spec:
+  replicas: 2         # giving instruction to create 2 replica(pods) of application
+  selector:
+    matchLabels:      # telling deployemtn which pods to manage
+     app: nginx-lab   # it will manage only pods that have labels
+  template:           #he Pods created by this Deployment will be labeled with app: nginx-lab.
+    metadata:
+      labels:
+        app: nginx-lab
+    spec:
+      containers:
+       - name: nginx-contain
+         image: n91k16/basicimage
+         ports:
+          - containerPort: 80
+          

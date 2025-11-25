@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-dep     # name of deployment
+  name: nginx-dep
+  namespace: default     # name of deployment
 
 spec:
   replicas: 3         # giving instruction to create 2 replica(pods) of application

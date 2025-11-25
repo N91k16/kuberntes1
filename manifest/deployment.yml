@@ -4,7 +4,7 @@ metadata:
   name: nginx-dep     # name of deployment
 
 spec:
-  replicas: 2         # giving instruction to create 2 replica(pods) of application
+  replicas: 3         # giving instruction to create 2 replica(pods) of application
   selector:
     matchLabels:      # telling deployemtn which pods to manage
      app: nginx-lab   # it will manage only pods that have labels

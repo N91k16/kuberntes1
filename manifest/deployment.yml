@@ -15,7 +15,7 @@ spec:
         app: nginx-lab
     spec:
       containers:
-       - name: nginx-contain
+       - name: starbucks
          image: n91k16/basicimage
          ports:
           - containerPort: 80

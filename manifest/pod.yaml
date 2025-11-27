@@ -8,11 +8,8 @@ metadata:
 spec:
   containers:
    - name: prod-containers
-     image: nginx
+     image: n91k16/todoapp
      ports: 
       - containerPort: 80
-  #  - name: dev-container
-  #    images: apache
-  #    ports: 
-
+ 
 
